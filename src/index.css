@@ -154,6 +154,11 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
+@utility raindrop {
+  @apply absolute rounded-full bg-blue-300;
+  box-shadow: 0 0 10px 2opx rgba(147, 197, 253, 0.3);
+}
+
 #root {
   max-width: 100%;
   margin: 0 auto;
