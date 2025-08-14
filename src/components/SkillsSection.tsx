@@ -48,7 +48,6 @@ export const SkillsSection = () => {
     const filteredSkills = skills.filter((skill) => activeCategory === "All" || skill.category === activeCategory);
 
     
-
     const renderStars = (level: number) => {
         const stars = [];
         const isPerfectScore = level === 5;
