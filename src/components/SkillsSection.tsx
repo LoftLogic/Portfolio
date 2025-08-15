@@ -5,7 +5,7 @@ import { SiHtml5, SiCss3, SiReact, SiJavascript, SiTypescript, SiTailwindcss,
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaJava } from "react-icons/fa";
 import { PiFileCppBold } from "react-icons/pi";
-
+import { useTheme } from "./ThemeContext";
 import { cn } from '../lib/utils'
 
 import { act, useState } from "react";
@@ -42,11 +42,17 @@ const skills = [
 
 
 const categories = ["All", "Frontend", "Backend", "Dev Tools"]
+
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("All");
+    const { isDarkMode } = useTheme(); // Get theme state
 
-    const filteredSkills = skills.filter((skill) => activeCategory === "All" || skill.category === activeCategory);
+    const filteredSkills = skills.filter((skill) => 
+        activeCategory === "All" || skill.category === activeCategory
+    );
 
+    const defaultTextColor = () => isDarkMode ? 'text-white' : 'text-black';
+    const defaultFillColor = () => isDarkMode ? 'fill-white' : 'fill-black';
     
     const renderStars = (level: number) => {
         const stars = [];
@@ -60,7 +66,7 @@ export const SkillsSection = () => {
                         i <= level 
                             ? isPerfectScore 
                                 ? 'fill-primary text-primary' 
-                                : 'fill-white text-white'
+                                : defaultFillColor() + " " + defaultTextColor()
                             : 'text-gray-600'
                     }`}
                 />
@@ -95,7 +101,7 @@ export const SkillsSection = () => {
                         <div className="text-center mb-3">
                             <h3 className="font-semibold text-lg mb-4"> {skill.name} </h3>
                             <skill.icon className={`h-12 w-12 mx-auto mb-3 ${
-                                skill.level === 5 ? 'text-primary' : 'text-white'
+                                skill.level === 5 ? 'text-primary' : defaultTextColor()
                             }`} />
                         </div>
                         <div className="flex gap-1 items-center justify-center">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTheme } from "./ThemeContext";
 
 interface Star {
     id: number;
@@ -21,6 +22,8 @@ interface Meteor {
 export const StarBackground = () => {
     const [stars, setStars] = useState<Star[]>([]);
     const [meteors, setMeteors] = useState<Meteor[]>([]);
+
+    const { isDarkMode } = useTheme();
 
     useEffect(() => {
         generateStars();
@@ -77,7 +80,7 @@ export const StarBackground = () => {
 
 
 
-    return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    return isDarkMode ? <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {stars.map((star) => (
             <div key={star.id} className="star animate-pulse-subtle" style={{
                 width: star.size + "px",
@@ -98,6 +101,7 @@ export const StarBackground = () => {
                 animationDuration: `${meteor.animationDuration}s`
             }}/>
         ))}
-    </div>;
+    </div> : 
+    <div></div>;
     
 }
