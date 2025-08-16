@@ -10,13 +10,6 @@ interface Rain {
     animationDuration: number;
 };
 
-interface Cloud {
-    id: number;
-    size: number;
-    top: number;
-    duration: number;
-}
-
 export const RainBackround = () => {
     const [raindrops, setRaindrops] = useState<Rain[]>([]);
     // const [clouds, setClouds] = useState<Cloud[]>([])

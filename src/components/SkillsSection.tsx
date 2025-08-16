@@ -1,4 +1,4 @@
-import { Star, Code2, Database, GitBranch, Container, Package, FileCode2 } from "lucide-react";
+import { Star, Database } from "lucide-react";
 import { SiHtml5, SiCss3, SiReact, SiJavascript, SiTypescript, SiTailwindcss, 
          SiNodedotjs, SiExpress, SiPython, SiDjango, SiFlask, SiSpringboot,
          SiGithub, SiDocker, SiPostman } from "react-icons/si";
@@ -8,7 +8,7 @@ import { PiFileCppBold } from "react-icons/pi";
 import { useTheme } from "./ThemeContext";
 import { cn } from '../lib/utils'
 
-import { act, useState } from "react";
+import { useState } from "react";
 
 const skills = [
     // Frontend

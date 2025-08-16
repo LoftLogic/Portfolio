@@ -1,9 +1,6 @@
-import { CircuitBoard, Code, Microscope, PencilRuler } from "lucide-react";
-import { cn } from "../lib/utils";
+import { Microscope, PencilRuler } from "lucide-react";
 
 type Work = "Project" | "Research" | "Club";
-
-const tagLimit = 6;
 
 interface project {
     id: number,
@@ -35,18 +32,18 @@ const projects: project[] = [
         date: "Jan 2025 - June 2025",
         type: "Research"
     },
-    {
-        id: 2,
-        premise: "TUI Shell Program",
-        title: "SeaShell",
-        description: "A shell program that supports all basic system calls as well as sequencing, piping, and I/O redirection.",
-        display: "To be implemented :(",
-        tags: ["Systems", "Solo"],
-        techs: ["C", "C++", "NCurses"],
-        demoUrl: "#",
-        date: "May 2025 - Aug 2025",
-        type: "Project"
-    },
+    // {
+    //     id: 2,
+    //     premise: "TUI Shell Program",
+    //     title: "SeaShell",
+    //     description: "A shell program that supports all basic system calls as well as sequencing, piping, and I/O redirection.",
+    //     display: "To be implemented :(",
+    //     tags: ["Systems", "Solo"],
+    //     techs: ["C", "C++", "NCurses"],
+    //     demoUrl: "#",
+    //     date: "May 2025 - Aug 2025",
+    //     type: "Project"
+    // },
     {
         id: 3,
         premise: "Sustainability Exhibit",
@@ -92,7 +89,7 @@ export const ProjectsSection = () => {
             </p>
 
             
-            {projects.map((project, key) => (
+            {projects.map((project) => (
                 <div className="my-12 py-6 bg-card p-6 rounded-2xl shadow-xs card-hover px-10">
                     
                     {/** ICON AND TITLE */}
@@ -152,6 +149,7 @@ export const ProjectsSection = () => {
                     {/** Demo */}
                     <a className="cosmic-button my-5"
                         href={project.demoUrl}
+                        target="_blank"
                     >
                         See it yourself
                     </a>
