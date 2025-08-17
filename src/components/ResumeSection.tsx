@@ -5,7 +5,7 @@ export const ResumeSection = () => {
             See my <span className="text-primary"> Resume </span>
         </h2>
         <div>
-            <embed src="src\assets\EvanLiResume.pdf"
+            <embed src="public\assets\EvanLiResume.pdf"
                 type="application/pdf"
                 width="50%"
                 height="1000px"
