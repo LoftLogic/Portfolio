@@ -1,3 +1,4 @@
+import resume from '../assets/EvanLiResume.pdf'
 
 export const ResumeSection = () => {
     return <section id="resume" className="py-24 px-4 relative">
@@ -5,7 +6,7 @@ export const ResumeSection = () => {
             See my <span className="text-primary"> Resume </span>
         </h2>
         <div>
-            <embed src="public\assets\EvanLiResume.pdf"
+            <embed src={resume}
                 type="application/pdf"
                 width="50%"
                 height="1000px"
