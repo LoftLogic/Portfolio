@@ -1,4 +1,6 @@
 import { Microscope, PencilRuler } from "lucide-react";
+import marioCity from '../assets/mariocity.mov'
+import portfolioPic from "../assets/portfolioscr.png"
 
 type Work = "Project" | "Research" | "Club";
 
@@ -49,7 +51,7 @@ const projects: project[] = [
         premise: "Sustainability Exhibit",
         title: "Mario City",
         description: "A childhood sustainability game that utilizes 3D-printed electronics, arduino, and an HTML Webpage",
-        display: <video src="public\assets\mariocity.mov" controls/>,
+        display: <video src={marioCity} controls/>,
         tags: ["Hardware", "Systems", "Collab"],
         techs: ["C++", "Arduino", "JavaScript", "HTML/CSS"],
         demoUrl: "https://github.com/LoftLogic/Mario-City",
@@ -61,7 +63,7 @@ const projects: project[] = [
         premise: "Portfolio",
         title: "Evan Li's Developer Portfolio",
         description: "The portfolio your on right now!",
-        display: <img src="public/assets/portfolioscr.png"/>,
+        display: <img src={portfolioPic}/>,
         tags: ["Webdev", "Frontend"],
         techs: ["HTML/CSS", "TypeScript", "React.js", "TailwindCSS", "Vercel"],
         demoUrl: "https://github.com/LoftLogic/Portfolio",
