@@ -62,7 +62,10 @@ export const ContactSection = () => {
                     <Linkedin className="h-8 w-8 text-primary flex-shrink-0" />
                     <div>
                         <p className="text-lg text-muted-foreground transition-colors duration-300 group-hover:text-primary">LinkedIn</p>
-                        <p className="transition-colors duration-300 group-hover:text-primary">Evan Li</p>
+                        <a className="transition-colors duration-300 group-hover:text-primary"
+                            href="https://www.linkedin.com/in/evan-li-ff/">
+                            Evan Li
+                            </a>
                     </div>
                 </div>
             </div>
