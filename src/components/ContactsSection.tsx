@@ -19,7 +19,7 @@ export const ContactSection = () => {
                         <h3 className="text-lg text-muted-foreground transition-colors duration-300 group-hover:text-primary">Email</h3>
                         <a 
                             href="mailto:evanlie.737@gmail.com"
-                            className="transition-colors duration-300 groua-hover:text-primary">evanlie.737@gmail.com</a>
+                            className="transition-colors duration-300 groua-hover:text-primary group-hover:text-primary">evanlie.737@gmail.com</a>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ export const ContactSection = () => {
                         <p className="text-lg text-muted-foreground transition-colors duration-300 group-hover:text-primary">Mobile</p>
                         <a
                             href="tel:+19144868529" 
-                            className="transition-colors duration-300 groua-hover:text-primary">+1 (914) 486-8529</a>
+                            className="transition-colors duration-300 groua-hover:text-primary group-hover:text-primary">+1 (914) 486-8529</a>
                     </div>
                 </div>
 

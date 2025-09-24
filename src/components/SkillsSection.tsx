@@ -12,8 +12,8 @@ import { useState } from "react";
 
 const skills = [
     // Frontend
-    {name: "HTML",  level: 4, category: "Frontend", icon: SiHtml5},
-    {name: "CSS", level: 4, category: "Frontend", icon: SiCss3},
+    {name: "HTML",  level: 5, category: "Frontend", icon: SiHtml5},
+    {name: "CSS", level: 5, category: "Frontend", icon: SiCss3},
     {name: "React", level: 5, category: "Frontend", icon: SiReact},
     {name: "JavaScript", level: 5, category: "Frontend", icon: SiJavascript},
     {name: "TypeScript", level: 5, category: "Frontend", icon: SiTypescript},
@@ -27,12 +27,12 @@ const skills = [
     {name: "Spring Boot", level: 4, category: "Backend", icon: SiSpringboot},
     {name: "Python", level: 5, category: "Backend", icon: SiPython},
     {name: "Django", level: 4, category: "Backend", icon: SiDjango},
-    {name: "Flask", level: 3, category: "Backend", icon: SiFlask},
-    {name: "C++", level: 4, category: "Backend", icon: PiFileCppBold },
+    {name: "Flask", level: 4, category: "Backend", icon: SiFlask},
+    {name: "C and C++", level: 4, category: "Backend", icon: PiFileCppBold },
 
     // Tools
     { name: "Git/Github", level: 5, category: "Dev Tools", icon: SiGithub },
-    { name: "Docker", level: 3, category: "Dev Tools", icon: SiDocker },
+    { name: "Docker", level: 4, category: "Dev Tools", icon: SiDocker },
     { name: "Postman", level: 4, category: "Dev Tools", icon: SiPostman },
     { name: "VS Code", level: 5, category: "Dev Tools", icon: BiLogoVisualStudio },
 
