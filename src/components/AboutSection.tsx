@@ -1,5 +1,8 @@
 import {cn} from "../lib/utils";
-import { CircuitBoard, Code, Microscope } from "lucide-react";
+import { CircuitBoard, Code, Microscope, Binary, Italic } from "lucide-react";
+import { FaUser } from "react-icons/fa";
+import portrait from '../assets/portrait.png'
+
 
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -11,8 +14,14 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
+                    <div className="my-4">
+                        <img src={portrait} className="py-7 rounded-2xl"/>
+                        <h3 className="italic my-0"> A super flattering picture of me</h3>
+                    </div>
+
+
                     <h3>
-                        Current third-year Computer Science student at Northeastern University, with a concentration in <i>Systems Engineering</i>
+                        Current third-year <i>Computer Science</i> student at Northeastern University, with a concentration in <i>Systems Engineering</i>
                     </h3>
                     <p className="text-muted-foreground">
                         {" "}
@@ -42,19 +51,20 @@ export const AboutSection = () => {
                     </div>
                 </div>
 
-                {/* THREE ICONS */}
+                {/* FOUR ICONS */}
                 <div className="grid grid-cols-1 gap-6">
                     
                     <div className="gradient-border p-6 card-hover"> 
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Code className="h-6 w-6 text-primary"/>
+                                <Binary className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
                                 <h4 className="text-semibold text-lg"> Programming </h4>
                                 <p className="text-muted-foreground">
-                                    Extremely proficient in Python, Java, C++, and JavaScript/Typescript, with a strong foundation in algorithms and data structures and object-oriented programming.
-                                    Also familiar with other fullstack development tools such as Tailwind, React, Express, Django and SQL.
+                                    Extremely well versed in core programming fundamentals, including using complex data structures, algorithms, object oriented programming, parallel programming, 
+                                    as well as both centralized and distributed systems programming.
+                                    Specifically very skilled with Python, C++, Java, and JavaScript/TypeScript, as well as other languages such as C, Rust, Matlab, and Racket.
                                 </p>
                             </div>
                         </div>
@@ -72,6 +82,7 @@ export const AboutSection = () => {
                                     the security of LLM systems. First Author of an LLM security paper submitted to NDSS titled
                                     <i> ACE: A Security Architecture for LLM-Integrated App Systems </i>.
                                     Previously worked on a project for AI startup <i> MatrixOrigin </i> on creating a text to SQL LLM platform.
+                                    Currently working on a paper that exposes vulnerabilities in existing agentic systems.
                                 </p>
                             </div>
                         </div>
@@ -80,13 +91,32 @@ export const AboutSection = () => {
                     <div className="gradient-border p-6 card-hover"> 
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <CircuitBoard className="h-6 w-6 text-primary"/>
+                                <Code className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                    <h4 className="text-semibold text-lg"> Systems </h4>
+                                    <h4 className="text-semibold text-lg"> Software Development </h4>
                                     <p className="text-muted-foreground">
-                                        Familiar with systems programming, including operating systems, systems security, computer architecture, and low-level programming with
-                                        C, Rust and ASM x86.
+                                        Skilled in basic software development, including web/front-end design with TailwindCSS, React.js, and TypeScript,
+                                        API design with Express, Spring or Django, and database design with both SQL and NoSQl.
+                                        Also familiar with developer tools such as most popular IDEs (IntelliJ, Visual Studio Code, Visual Studio, Arduino, etc) including AI integrated IDEs such as Cursor,
+                                        as well as GitHub, Postman, and Docker.
+                                        Developed software for courses, clubs, hackathons and in personal passion projects.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="gradient-border p-6 card-hover"> 
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <FaUser className="h-6 w-6 text-primary"/>
+                            </div>
+                            <div className="text-left">
+                                    <h4 className="text-semibold text-lg"> Student Organizations </h4>
+                                    <p className="text-muted-foreground">
+                                        Active member in student clubs, including  Forge, a product development club that is currently working on
+                                        a social location review and sharing app, as well as Rev, a selective (~25% acceptance) entreapreanurship
+                                        club that fosters the growth of AI startups.
                                     </p>
                             </div>
                         </div>

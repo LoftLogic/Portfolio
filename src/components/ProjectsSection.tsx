@@ -23,7 +23,7 @@ const projects: project[] = [
         premise: "LLM Security Paper (First Author)",
         title: "ACE: A Security Architecture for LLM-Integrated App Systems",
         description: "ACE, or Abstract Concrete Executer, is an expiermental LLM security framework that uses secure information flow and static analysis\
-        to safeguard sytems of LLM applications from indirect prompt injections or denial of service attacks.",
+        to safeguard sytems of LLM applications from indirect prompt injections or denial of service attacks. \n Accepted into the Network and Disributed Security Symposium 2026. ",
         display: <embed src="https://arxiv.org/pdf/2504.20984" 
                 type="application/pdf" 
                 width="100%" 
@@ -34,18 +34,18 @@ const projects: project[] = [
         date: "Jan 2025 - June 2025",
         type: "Research"
     },
-    // {
-    //     id: 2,
-    //     premise: "TUI Shell Program",
-    //     title: "SeaShell",
-    //     description: "A shell program that supports all basic system calls as well as sequencing, piping, and I/O redirection.",
-    //     display: "To be implemented :(",
-    //     tags: ["Systems", "Solo"],
-    //     techs: ["C", "C++", "NCurses"],
-    //     demoUrl: "#",
-    //     date: "May 2025 - Aug 2025",
-    //     type: "Project"
-    // },
+    {
+        id: 2,
+        premise: "Agentic Text Editor",
+        title: "LoreBoard",
+        description: "An LLM powered creative writing app- uses AI to track attributes of characters such as physical features, speaking patterns, and interactions with other characters.",
+        display: "To be implemented :(",
+        tags: ["Software Engineering", "Artificial Intelligence", "Collobrative"],
+        techs: ["Python", "Langchain", "React.js", "TypeScript", "Django"],
+        demoUrl: "#",
+        date: "April 2025 - Presnt",
+        type: "Project"
+    },
     {
         id: 3,
         premise: "Sustainability Exhibit",

@@ -73,6 +73,11 @@ export const CoursesSection = () => {
                 <span className="text-primary"> Systems</span>
             </p>
 
+            {/* <a className="cosmic-button" href="#">
+                            {" "}
+                            See my trancsript
+            </a> */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 {courses.map((course, key) => (
                     <div key={key} className="bg-card rounded-lg shadow-xs card-hover flex flex-col">
