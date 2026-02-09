@@ -1,5 +1,5 @@
 import {cn} from "../lib/utils";
-import { CircuitBoard, Code, Microscope, Binary, Italic } from "lucide-react";
+import { Code, Microscope, Binary } from "lucide-react";
 import { FaUser } from "react-icons/fa";
 import portrait from '../assets/portrait.png'
 
