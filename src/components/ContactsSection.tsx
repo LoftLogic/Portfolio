@@ -52,8 +52,8 @@ export const ContactSection = () => {
                     <div>
                         <p className="text-lg text-muted-foreground transition-colors duration-300 group-hover:text-primary">Github</p>
                         <a 
-                            href="https://github.com/LoftLogic"
-                            className="transition-colors duration-300 group-hover:text-primary">LoftLogic</a>
+                            href="https://github.com/evanli135"
+                            className="transition-colors duration-300 group-hover:text-primary">evanli135</a>
                     </div>
                 </div>
 

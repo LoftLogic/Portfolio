@@ -54,7 +54,7 @@ const projects: project[] = [
         display: <video src={marioCity} controls/>,
         tags: ["Hardware", "Systems", "Collab"],
         techs: ["C++", "Arduino", "JavaScript", "HTML/CSS"],
-        demoUrl: "https://github.com/LoftLogic/Mario-City",
+        demoUrl: "https://github.com/evanli135/Mario-City",
         date: "March 2024 - May 2024",
         type: "Project"
     },
@@ -66,7 +66,7 @@ const projects: project[] = [
         display: <img src={portfolioPic}/>,
         tags: ["Webdev", "Frontend"],
         techs: ["HTML/CSS", "TypeScript", "React.js", "TailwindCSS", "Vercel"],
-        demoUrl: "https://github.com/LoftLogic/Portfolio",
+        demoUrl: "https://github.com/evanli135/Portfolio",
         date: "June 2025 - August 2025",
         type: "Project"
     }
